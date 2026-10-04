@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Rochas's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="top">
+        <h1>João Rochas's Portfolio</h1>
+        <!-- Navigation menu -->
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="primary-navigation">
+            <ul>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about-me">
+            <h2>About Me</h2>
+            <p>My name is João Rocha, and I am an aspiring web developer with a passion for creating engaging and user-friendly websites. I am formed in mechanical engineering and have a strong foundation in problem-solving and critical thinking. I worked as a mechanical engineer, in production and leadership roles, before transitioning to web development.</p>
+            <p>My transition to web development has been driven by my desire to combine my technical background with my passion for creating digital experiences and solving complex problems.</p>
+    </section>
+    <div class="project-filters">
+        <label for="project-category-filter">Filter projects</label>
+        <select id="project-category-filter">
+            <option value="all">All projects</option>
+            <option value="management">Management</option>
+            <option value="productivity">Productivity</option>
+        </select>
+        <p id="project-filter-status" aria-live="polite">Showing all 2 projects</p>
+    </div>
+    <section id="projects" class="project-card" data-project-category="management">
+        <article>
+            <h2>Inventory Management System</h2>
+            <p>This project aims to deliver a console application that allows users to add new products, including their price and stock quantity. Users can also increase or decrease product stock levels when restocking or selling products, as well as delete products from the inventory. Finally, they can view all products in the inventory along with their prices and stock quantities.</p>
+        </article>
+        <figure>
+            <img src="Inventory Management System.png" alt="Inventory Management System Screenshot">
+            <figcaption>Screenshot of Inventory Management System </figcaption>
+        </figure>
+    </section>
+    <section class="project-card" data-project-category="productivity">
+        <article>
+            <h2>ToDo List</h2>
+            <p>This project is a simple ToDo list console application that allows users to add, complete, and delete tasks, up to a maximum of 10 tasks. It is designed to be responsive and user-friendly, providing a seamless experience across different devices.</p>
+        </article>
+        <figure>
+            <img src="ToDo List.png" alt="ToDo List Screenshot">
+            <figcaption>Screenshot of ToDo List</figcaption>
+        </figure>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C#</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
